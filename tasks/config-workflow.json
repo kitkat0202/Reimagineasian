@@ -1,27 +1,27 @@
 {
-  "jsLintIgnore": "./src/_assets/js/vendors/**",
-  "jsSrc": "./src/_assets/js/**/*.js",
+  "jsLintIgnore": "./src/assets/js/vendors/**",
+  "jsSrc": "./src/assets/js/**/*.js",
   "jsComponents": {
     "vendors": {
       "process": false,
       "filelist":[
-        "./src/_assets/js/vendors/*.js"
+        "./src/assets/js/vendors/*.js"
       ],
       "filename": "vendors.js"
     },
     "theme": {
       "process": true,
       "filelist":[
-        "./src/_assets/js/*.js"
+        "./src/assets/js/*.js"
       ],
       "filename":"main.js"
     }
   },
   "src": {
-    "sassSrc": "./src/_assets/scss/*.scss",
-    "sassSrc2": "./src/_assets/scss/**/*.scss",
-    "imgSrc": "./src/_assets/img/**",
-    "jsonSrc": "./src/_assets/json/**"
+    "sassSrc": "./src/assets/scss/*.scss",
+    "sassSrc2": "./src/assets/scss/**/*.scss",
+    "imgSrc": "./src/assets/img/**",
+    "jsonSrc": "./src/assets/json/**"
   },
   "handlebars": {
     "hbsSrc": "./src/**/*.html",
@@ -34,27 +34,21 @@
   },
   "build": {
     "root": "./build/",
-    "css": "./build/_assets/css",
+    "css": "./build/assets/css",
     "cssName": "main.css",
-    "cssSrc": "./build/_assets/css/*.css",
-    "cssMapSrc": "./build/_assets/css/*.map",
-    "img": "./build/_assets/img",
-    "imgSrc": "./build/_assets/img/**",
-    "js": "./build/_assets/js",
-    "jsSrc": "./build/_assets/js/*.js",
-    "jsMapSrc": "./build/_assets/js/*.map",
+    "cssSrc": "./build/assets/css/*.css",
+    "cssMapSrc": "./build/assets/css/*.map",
+    "img": "./build/assets/img",
+    "imgSrc": "./build/assets/img/**",
+    "js": "./build/assets/js",
+    "jsSrc": "./build/assets/js/*.js",
+    "jsMapSrc": "./build/assets/js/*.map",
     "htmlSrc": "./build/**/*.html",
-    "json": "./build/_assets/json/",
+    "json": "./build/assets/json/",
     "assetsSrc": [
       "./build/**",
-      "!./build/_assets/css/*.map",
-      "!./build/_assets/js/*.map"
+      "!./build/assets/css/*.map",
+      "!./build/assets/js/*.map"
     ]
-  },
-  "dist": {
-    "root": "./public/",
-    "css": "./public/_assets/css",
-    "js": "./public/_assets/js",
-    "img": "./public/_assets/img"
   }
 }
