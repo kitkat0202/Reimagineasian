@@ -1,0 +1,32 @@
+// COLOR
+$black: #000;
+$white: #fff;
+$blue: #00EFD1;
+$dark-blue: #00ACEA;
+
+$primaryColor: $white;
+$secondaryColor: $black;
+$thirdColor: $blue;
+
+$textColor: $white;
+$hover-color: $thirdColor;
+
+
+$gradient: linear-gradient(90deg, $blue 35%,$dark-blue 65%);
+
+// FONT
+$title: 'Averia Libre', cursive;
+$text: 'Raleway', sans-serif;
+
+// OTHER
+$trans: all 200ms ease-in-out;
+$shadow: 5px 5px 10px #ffffff89;
+
+$border: 3px solid $white;
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

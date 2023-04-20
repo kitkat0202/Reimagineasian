@@ -1,0 +1,10 @@
+footer {
+  z-index: 2;
+  padding: 30px 10px;
+  background-color: $black;
+  width: 100%;
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+}

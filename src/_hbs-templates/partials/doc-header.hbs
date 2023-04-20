@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{meta.title}}</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Primary Meta Tags -->
+    <meta name="title" content="{{meta.title}}">
+    <meta name="image" content="{{meta.image}}">
+    <meta name="description" content="{{meta.description}}">
+    <meta name="keywords" content="{{#each meta.keywords}}{{this}}, {{/each}}{{meta.title}}">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="{{meta.title}}">
+    <meta itemprop="description" content="{{meta.description}}">
+    <meta itemprop="image" content="{{meta.image}}">
+
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="{{meta.title}}">
+    <meta name="og:description" content="{{meta.description}}">
+    <meta name="og:image" content="{{meta.image}}">
+    <meta name="og:url" content="{{meta.site}}">
+    <meta name="og:site_name" content="{{meta.title}}">
+    <meta name="og:locale" content="en_US">
+    <meta name="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{meta.site}}">
+    <meta property="twitter:title" content="{{meta.title}}">
+    <meta property="twitter:description" content="{{meta.description}}">
+    <meta property="twitter:image" content="{{meta.image}}">
+
+
+    <!-- Icon logo -->
+    <link rel="shortcut icon" href="./_assets/img/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Lightroom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="./_assets/css/main.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" class="pause">

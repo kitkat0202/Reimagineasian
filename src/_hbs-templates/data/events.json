@@ -1,0 +1,27 @@
+[
+    {
+        "day": "Saturday",
+        "month": "July",
+        "date": "4th",
+        "year": "2023",
+        "location": "COLUMBUS CIRCLE SPRINGFEST",
+        "location2": "(ON BROADWAY from 60th - 61st ST.)",
+        "application": "https://www.google.com/"
+    },
+    {
+        "day": "Saturday",
+        "month": "July",
+        "date": "4th",
+        "year": "2023",
+        "location": "COLUMBUS CIRCLE SPRINGFEST",
+        "application": "https://www.google.com/"
+    },
+    {
+        "day": "Saturday",
+        "month": "July",
+        "date": "4th",
+        "year": "2023",
+        "location": "COLUMBUS CIRCLE SPRINGFEST",
+        "location2": "(ON BROADWAY from 60th - 61st ST.)"
+    }
+]

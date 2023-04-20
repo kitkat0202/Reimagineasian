@@ -1,0 +1,10 @@
+{{#> section id="gallery"}}
+    <h2>Gallery</h2>
+    <div class="gallery-container container">
+        {{#each gallery}}
+        <a href="./_assets/img/gallery/{{img}}" data-lightbox="{{data}}" class="{{class}}">
+            <img src="./_assets/img/gallery/{{img}}" alt="{{alt}}">
+        </a>
+        {{/each}}
+    </div>
+{{/section}}

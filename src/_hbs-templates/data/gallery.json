@@ -1,0 +1,46 @@
+[
+    {
+        "img": "gallery_1.jpg",
+        "alt": "Lion dance on the first Reinagineasian fair",
+        "data": "reimagineasianGallery",
+        "class": "vertical"
+    },
+    {
+        "img": "gallery_2.jpg",
+        "alt": "Jester on the first Reinagineasian fair",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "gallery_3.jpg",
+        "alt": "HangryDog first day stand",
+        "data": "reimagineasianGallery",
+        "class": "big"
+    },
+    {
+        "img": "gallery_4.jpg",
+        "alt": "Lion dance on the first Reinagineasian fair 2",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "gallery_5.jpg",
+        "alt": "Lion dance on the first Reinagineasian fair 3",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "gallery_6.jpg",
+        "alt": "Lion dance on the first Reinagineasian fair 4",
+        "data": "reimagineasianGallery",
+        "class": "big"
+    },
+    {
+        "img": "gallery_7.jpg",
+        "alt": "Lion dance on the first Reinagineasian fair 5",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "gallery_8.jpg",
+        "alt": "HangryDog with ketchup and mustard",
+        "data": "reimagineasianGallery",
+        "class": "vertical"
+    }
+]

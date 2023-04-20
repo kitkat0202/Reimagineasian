@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=Raleway:wght@400;700&display=swap');
+
+@import "00_abstracts/**";
+@import "01_vendors/**";
+@import "02_components/**";
+@import "03_layout/**";
+@import "04_section/**";
+
+html, body {
+  color: $textColor;
+  font-family: $text;
+  background-color: $black;
+}
+
+body {
+  &.pause {
+    overflow: hidden;
+    main {
+      display: none;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.nowrap { white-space: nowrap; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+section {
+  padding: 30px 60px 30px 10px;
+  margin-bottom: 50px;
+  @media (min-width: $md) {
+    padding: 30px;
+  }
+}
+
+.logo-head-container {
+  display: flex;
+  @media (min-width: 846px) {
+    justify-content: center;
+  }
+  img {
+    width: 290px;
+  }
+}
