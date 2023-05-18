@@ -9,6 +9,9 @@
 .caps {
   text-transform: uppercase;
 }
+.small-cap {
+  font-variant: small-caps;
+}
 
 strong, .bold {
   font-family: "AauxProOT";
@@ -36,3 +39,4 @@ a {
     color: $dark-blue;
   }
 }
+

@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
   ////////////////
   // OPEN MODAL //
   ////////////////
-  let allModalLinks = document.querySelectorAll("[data-modal-is]")
+  let allModalLinks = document.querySelectorAll("[data-modal-id]")
   allModalLinks.forEach(el => {
     el.addEventListener("click", () => {
-      let modalID = el.getAttribute("data-modal-is")
+      let modalID = el.getAttribute("data-modal-id")
       let modal = document.querySelector(`#${modalID}`)
 
       modal.classList.add("active")
@@ -77,4 +77,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
     })
   }
+
+  ////////////
+  // SLIDES //
+  ////////////
+  var index = 0;
+  var slides = document.querySelectorAll(".slides");
+  var dot = document.querySelectorAll(".dot");
+
+  function changeSlide(){
+
+    if(index<0){
+      index = slides.length-1;
+    }
+
+    if(index>slides.length-1){
+      index = 0;
+    }
+
+    for(let i=0;i<slides.length;i++){
+
+      slides[i].classList.remove("active");
+      dot[i].classList.remove("active");
+    }
+
+    let nextActiveSlide = document.querySelector(`[data-slide-num="${index}"]`)
+    let nextActiveDot = document.querySelector(`[data-dot-num="${index}"]`)
+
+    nextActiveSlide.classList.add("active");
+    nextActiveDot.classList.add("active");
+
+    index++;
+
+    setTimeout(changeSlide,5000);
+
+  }
+
+  changeSlide();
 })

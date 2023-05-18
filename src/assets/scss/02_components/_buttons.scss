@@ -17,9 +17,16 @@
     border-radius: 15px 15px 0 15px;
     padding: 2px 15px 0 15px;
     white-space: nowrap;
-    transition: all .2s linear;
+    transform: translate(0px, 0px);
+    transition: all .1s linear;
     &:hover {
         background-position: 0% 0%;
         box-shadow: 2px 2px 2px #ffffff8d;
+        transform: translate(-2px, -2px);
+        color: $black;
+    }
+    &:active {
+        box-shadow: 0px 0px 0px #0000008d;
+        transform: translate(0px, 0px);
     }
 }

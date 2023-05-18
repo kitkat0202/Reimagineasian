@@ -6,14 +6,19 @@
             <div class="event-container">
                 <img src="./assets/img/icons-calendar-color.png" alt="">
                 <div class="dates-container">
-                    <p class="day">{{day}}</p>
-                    <p class="month">{{month}}</p>
-                    <p class="date">{{date}}</p>
+                    <p class="day">{{{day}}}</p>
+                    <p class="month">{{{month}}}</p>
+                    <p class="date">{{{date}}}</p>
                 </div>
             </div>
             <div class="location-container">
-                <p class="location">{{location}}<br/>{{#if location2}}<span class="smaller">{{location2}}</span>{{/if}}</p>
-
+                <p class="location">
+                    {{{location}}}<br/>
+                    {{#if location2}}<span class="smaller">{{{location2}}}</span>{{/if}}<br/>
+                    {{{time}}}
+                </p>
+            </div>
+            <div class="link-container">
                 {{#if application}}
                     <a class="btn" href="{{application}}" target="_blank">CLICK HERE TO APPLY</a>
                 {{else}}

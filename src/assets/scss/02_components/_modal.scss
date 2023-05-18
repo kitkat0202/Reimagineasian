@@ -10,6 +10,9 @@
     }
     &#intro-modal {
         background-color: $secondaryColor;
+        &:hover {
+            cursor: pointer;
+        }
         .container {
             height: 100%;
         }
