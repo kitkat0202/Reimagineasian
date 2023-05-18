@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
   ////////////////
   // OPEN MODAL //
   ////////////////
-  var allModalLinks = document.querySelectorAll("[data-modal-is]");
+  var allModalLinks = document.querySelectorAll("[data-modal-id]");
   allModalLinks.forEach(function (el) {
     el.addEventListener("click", function () {
-      var modalID = el.getAttribute("data-modal-is");
+      var modalID = el.getAttribute("data-modal-id");
       var modal = document.querySelector("#".concat(modalID));
       modal.classList.add("active");
     });
@@ -71,6 +71,37 @@ document.addEventListener('DOMContentLoaded', function () {
         openNavbar();
       }
     });
+  } ////////////
+  // SLIDES //
+  ////////////
+
+
+  var index = 0;
+  var slides = document.querySelectorAll(".slides");
+  var dot = document.querySelectorAll(".dot");
+
+  function changeSlide() {
+    if (index < 0) {
+      index = slides.length - 1;
+    }
+
+    if (index > slides.length - 1) {
+      index = 0;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].classList.remove("active");
+      dot[i].classList.remove("active");
+    }
+
+    var nextActiveSlide = document.querySelector("[data-slide-num=\"".concat(index, "\"]"));
+    var nextActiveDot = document.querySelector("[data-dot-num=\"".concat(index, "\"]"));
+    nextActiveSlide.classList.add("active");
+    nextActiveDot.classList.add("active");
+    index++;
+    setTimeout(changeSlide, 5000);
   }
+
+  changeSlide();
 });
 //# sourceMappingURL=main.js.map
