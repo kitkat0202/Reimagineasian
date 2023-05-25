@@ -8,20 +8,25 @@
 </div>
 
 {{#each video}}
-    <div id="{{videoid}}" class="modal">
+    <div id="{{videoid}}" class="modal video-modal">
         <div class="container">
-            <div class="content">
-                <h3>{{name}}</h3>
-                {{#equal videoHost "youtube"}}
-                <iframe
-                    src="https://www.youtube.com/embed/{{embedCode}}"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-                {{/equal}}
-            </div>
+            <h3>{{name}}</h3>
+            {{#equal videoHost "youtube"}}
+            <iframe
+                src="https://www.youtube.com/embed/{{embedCode}}"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+            {{/equal}}
+
+            {{#equal videoHost "file"}}
+            <video controls>
+                <source src="{{videoLocation}}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            {{/equal}}
         </div>
     </div>
 {{/each}}

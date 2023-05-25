@@ -1,15 +1,15 @@
 .modal {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    &.active {
-        display: block;
-    }
     &#intro-modal {
         background-color: $secondaryColor;
+        &.active {
+            display: block;
+        }
         &:hover {
             cursor: pointer;
         }
@@ -38,6 +38,27 @@
         }
 
     }
-
+    &.video-modal {
+        background-color: #000000d8;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        &.active {
+            display: flex;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            h3 {
+                margin-bottom: 30px;
+            }
+            video {
+                height: 80vh;
+                max-width: 95vw;
+                background-color: #09181e;
+            }
+        }
+    }
 
 }

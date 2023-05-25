@@ -1,51 +1,51 @@
 [
     {
+        "videoid": "reimnagineasian",
+        "name": "ReimagineAsian",
+        "videoHost": "file",
+        "videoLocation": "./assets/img/videos/Reimagineasian-no-Logo.mp4",
+        "imgLocation": "./assets/img/video-img/0.png",
+        "slideNum": "0",
+        "classes": "active"
+    },
+    {
         "videoid": "hangrydog",
         "name": "Hangrydog",
-        "videoHost": "youtube",
-        "embedCode": "OeFSRVFcJTI",
-        "imgName": "0.png",
-        "slideNum": "0",
-        "classes": ""
+        "videoHost": "file",
+        "videoLocation": "./assets/img/videos/Hangrydog.mp4",
+        "imgLocation": "./assets/img/video-img/1.png",
+        "slideNum": "1"
     },
     {
         "videoid": "sam-fried-icecream",
         "name": "Sam's Fried Icecream",
-        "videoHost": "youtube",
-        "embedCode": "Qg9UgXotvws",
-        "imgName": "1.png",
-        "slideNum": "1"
+        "videoHost": "file",
+        "videoLocation": "./assets/img/videos/Sams-fried-ice-cream.mp4",
+        "imgLocation": "./assets/img/video-img/2.png",
+        "slideNum": "2"
     },
     {
         "videoid": "five-spice",
         "name": "Five Spice",
-        "videoHost": "youtube",
-        "embedCode": "iikpZ0jBNIk",
-        "imgName": "2.png",
-        "slideNum": "2"
-    },
-    {
-        "videoid": "lettus-meat",
-        "name": "Lettus Meat",
-        "videoHost": "youtube",
-        "embedCode": "I6D8RM7jjng",
-        "imgName": "3.png",
+        "videoHost": "file",
+        "videoLocation": "./assets/img/videos/5ive-spice.mp4",
+        "imgLocation": "./assets/img/video-img/3.png",
         "slideNum": "3"
     },
     {
-        "videoid": "twisted-potato",
-        "name": "Twisted Potato",
-        "videoHost": "youtube",
-        "embedCode": "BN7mc8thy8Y",
-        "imgName": "4.png",
+        "videoid": "karls-balls",
+        "name": "Karls Balls",
+        "videoHost": "file",
+        "videoLocation": "./assets/img/videos/Karls-balls.mp4",
+        "imgLocation": "./assets/img/video-img/4.png",
         "slideNum": "4"
     },
     {
-        "videoid": "hangry-2",
-        "name": "Hangrydog",
-        "videoHost": "youtube",
-        "embedCode": "2AlMq-uds84",
-        "imgName": "5.png",
+        "videoid": "matcha-drinks",
+        "name": "Matcha Drinks",
+        "videoHost": "file",
+        "videoLocation": "./assets/img/videos/Matcha-drinks.mp4",
+        "imgLocation": "./assets/img/video-img/5.png",
         "slideNum": "5"
     }
 ]

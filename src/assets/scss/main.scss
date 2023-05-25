@@ -15,8 +15,9 @@ html, body {
 body {
   &.pause {
     overflow: hidden;
-    main {
-      display: none;
+    height: 100vh;
+    header {
+      z-index: unset;
     }
   }
 }
@@ -40,6 +41,7 @@ section {
   margin-bottom: 50px;
   @media (min-width: $md) {
     padding: 30px;
+    margin-bottom: 100px;
   }
 }
 

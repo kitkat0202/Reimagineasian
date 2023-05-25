@@ -1,6 +1,6 @@
 [
     {
-        "img": "gallery_1.jpg",
+        "img": "gallery_1.png",
         "alt": "Reeimagineasian first fair street image",
         "data": "reimagineasianGallery",
         "class": "big"
@@ -33,7 +33,7 @@
         "class": "horizontal"
     },
     {
-        "img": "gallery_7.jpg",
+        "img": "gallery_7.png",
         "alt": "Lettuce Meat stand",
         "data": "reimagineasianGallery",
         "class": "vertical"
@@ -71,7 +71,7 @@
         "data": "reimagineasianGallery"
     },
     {
-        "img": "gallery_14.jpg",
+        "img": "gallery_14.png",
         "alt": "Five Spice stand",
         "data": "reimagineasianGallery"
     },
@@ -118,7 +118,7 @@
         "class": "vertical"
     },
     {
-        "img": "gallery_23.jpg",
+        "img": "gallery_23.png",
         "alt": "Lion dance on the first Reinagineasian fair 8",
         "data": "reimagineasianGallery",
         "class": "big"
