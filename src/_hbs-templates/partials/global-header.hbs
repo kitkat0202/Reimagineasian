@@ -5,7 +5,7 @@
         {{!-- img container --}}
         <div class="nav-logo-container">
           <a href="/">
-            <img src="/assets/img/global/logo-text.png" alt="Logo">
+            <img src="{{#equal page 'home'}}./{{else}}../{{/equal}}assets/img/global/logo-text.png" alt="Logo">
           </a>
         </div>
 
