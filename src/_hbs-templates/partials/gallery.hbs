@@ -1,10 +1,7 @@
-{{#> section id="gallery"}}
-    <h2>Gallery</h2>
-    <div class="gallery-container container">
-        {{#each gallery}}
-        <a href="./assets/img/gallery/{{img}}" data-lightbox="{{data}}" class="{{class}}">
-            <img src="./assets/img/gallery/{{img}}" alt="{{alt}}">
-        </a>
-        {{/each}}
-    </div>
-{{/section}}
+<div class="gallery-container">
+    {{#each gallery}}
+    <a href="./assets/img/gallery/{{img}}" data-lightbox="{{data}}" class="{{class}}">
+        <img class="img-curved small-curved" src="./assets/img/gallery/{{img}}" alt="{{alt}}">
+    </a>
+    {{/each}}
+</div>

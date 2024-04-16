@@ -1,8 +1,8 @@
-.averia {
+.title {
   font-family: $title;
 }
 
-.raleway {
+.text {
   font-family: $text;
 }
 
@@ -14,29 +14,44 @@
 }
 
 strong, .bold {
-  font-family: "AauxProOT";
   font-weight: 800;
 }
-
 
 .small {
   font-size: 80%;
 }
 
-h2 {
-  font-size: 30px;
-  letter-spacing: 1.5px;
-  border-bottom: 3px dashed $white;
-  padding-bottom: 7px;
-  padding-right: 20px;
-  margin-bottom: 30px;
-  width: max-content;
+.text-orange {
+  color: $orange;
 }
 
-a {
-  color: $blue;
-  &:hover {
-    color: $dark-blue;
+h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: $orange;
+  @media (max-width: 425px) {
+    font-size: 3rem;
   }
 }
 
+h2 {
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 23px;
+}
+
+p, li {
+  line-height: 27.2px;
+  margin-bottom: 30px;
+  &.sub-title {
+    font-size: 24px;
+    line-height: 31.2px;
+    font-weight: 700;
+    color: $dark-blue;
+  }
+}

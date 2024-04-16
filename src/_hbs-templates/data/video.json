@@ -3,8 +3,8 @@
         "videoid": "reimnagineasian",
         "name": "ReimagineAsian",
         "videoHost": "file",
-        "videoLocation": "./assets/img/videos/Reimagineasian-no-Logo.mp4",
-        "imgLocation": "./assets/img/video-img/0.png",
+        "videoLocation": "../assets/img/videos/Reimagineasian-no-Logo.mp4",
+        "imgLocation": "../assets/img/video-img/0.png",
         "slideNum": "0",
         "classes": "active"
     },
@@ -12,40 +12,40 @@
         "videoid": "hangrydog",
         "name": "Hangrydog",
         "videoHost": "file",
-        "videoLocation": "./assets/img/videos/Hangrydog.mp4",
-        "imgLocation": "./assets/img/video-img/1.png",
+        "videoLocation": "../assets/img/videos/Hangrydog.mp4",
+        "imgLocation": "../assets/img/video-img/1.png",
         "slideNum": "1"
     },
     {
         "videoid": "sam-fried-icecream",
         "name": "Sam's Fried Icecream",
         "videoHost": "file",
-        "videoLocation": "./assets/img/videos/Sams-fried-ice-cream.mp4",
-        "imgLocation": "./assets/img/video-img/2.png",
+        "videoLocation": "../assets/img/videos/Sams-fried-ice-cream.mp4",
+        "imgLocation": "../assets/img/video-img/2.png",
         "slideNum": "2"
     },
     {
         "videoid": "five-spice",
         "name": "Five Spice",
         "videoHost": "file",
-        "videoLocation": "./assets/img/videos/5ive-spice.mp4",
-        "imgLocation": "./assets/img/video-img/3.png",
+        "videoLocation": "../assets/img/videos/5ive-spice.mp4",
+        "imgLocation": "../assets/img/video-img/3.png",
         "slideNum": "3"
     },
     {
         "videoid": "karls-balls",
         "name": "Karls Balls",
         "videoHost": "file",
-        "videoLocation": "./assets/img/videos/Karls-balls.mp4",
-        "imgLocation": "./assets/img/video-img/4.png",
+        "videoLocation": "../assets/img/videos/Karls-balls.mp4",
+        "imgLocation": "../assets/img/video-img/4.png",
         "slideNum": "4"
     },
     {
         "videoid": "matcha-drinks",
         "name": "Matcha Drinks",
         "videoHost": "file",
-        "videoLocation": "./assets/img/videos/Matcha-drinks.mp4",
-        "imgLocation": "./assets/img/video-img/5.png",
+        "videoLocation": "../assets/img/videos/Matcha-drinks.mp4",
+        "imgLocation": "../assets/img/video-img/5.png",
         "slideNum": "5"
     }
 ]

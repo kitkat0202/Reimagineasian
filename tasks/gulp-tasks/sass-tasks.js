@@ -41,28 +41,36 @@ const config = require('../config-workflow.json');
 // ================= //
 
 gulp.task('compile_sass', function (done) {
- return gulp.src(config.src.sassSrc)
-  .pipe(sourcemaps.init())
-  .pipe(sassGlob())
-  .pipe(sass({
-    outputStyle: 'compressed',
-    includePaths: [
-      './node_modules/bootstrap-scss/'
-    ]
-  })
-  .on('error', sass.logError))
-  .pipe(autoprefixer())
-  .pipe(sourcemaps.write('.'))
-  .pipe(rename(config.build.cssName))
-  .pipe(gulp.dest(config.build.css))
-  .pipe(touch());
+  return gulp
+    .src(config.src.sassSrc)
+    .pipe(sourcemaps.init())
+    .pipe(sassGlob())
+    .pipe(
+      sass({
+        outputStyle: 'compressed',
+        includePaths: [
+          './node_modules/bootstrap/scss',
+          './node_modules/ins-arik-style-guide',
+        ],
+      }).on('error', sass.logError)
+    )
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(config.build.css))
+    .pipe(touch());
   done();
 });
 
-gulp.task('watch_sass', function() {
-  return gulp.watch(config.src.sassSrc, gulp.series('compile_sass', 'browser_reload'));
+gulp.task('watch_sass', function () {
+  return gulp.watch(
+    config.src.sassSrc,
+    gulp.series('compile_sass', 'browser_reload')
+  );
 });
 
-gulp.task('watch_sass2', function() {
-  return gulp.watch(config.src.sassSrc2, gulp.series('compile_sass', 'browser_reload'));
+gulp.task('watch_sass2', function () {
+  return gulp.watch(
+    config.src.sassSrc2,
+    gulp.series('compile_sass', 'browser_reload')
+  );
 });

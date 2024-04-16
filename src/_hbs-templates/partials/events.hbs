@@ -1,32 +1,26 @@
-{{#> section id="events"}}
-    <h2>Events</h2>
-    <div class="content">
-        {{#each events}}
-        <div class="event-full-containers">
-            <div class="event-container">
-                <img src="./assets/img/icons-calendar-color.png" alt="">
-                <div class="dates-container">
-                    <p class="day">{{{day}}}</p>
-                    <p class="month">{{{month}}}</p>
-                    <p class="date">{{{date}}}</p>
-                </div>
-            </div>
-            <div class="location-container">
-                <p class="location">
-                    {{{location}}}<br/>
-                    {{#if location2}}<span class="smaller">{{{location2}}}</span>{{/if}}<br/>
-                    {{{time}}}
-                </p>
-            </div>
-            <div class="link-container">
-                {{#if application}}
-                    <a class="btn" href="{{application}}" target="_blank">CLICK HERE TO APPLY</a>
-                {{else}}
-                    <p class="coming-soon">Application Comming Soon</p>
-                {{/if}}
+{{#each events}}
+    <div class="event-full-containers">
+        <div class="event-container">
+            <img src="./assets/img/icons-calendar-color.png" alt="">
+            <div class="dates-container">
+                <p class="day">{{{day}}}</p>
+                <p class="month">{{{month}}}</p>
+                <p class="date">{{{date}}}</p>
             </div>
         </div>
-
-        {{/each}}
+        <div class="location-container">
+            <p class="location">
+                {{{location}}}<br/>
+                {{#if location2}}<span class="smaller">{{{location2}}}</span>{{/if}}<br/>
+                {{{time}}}
+            </p>
+        </div>
+        <div class="link-container">
+            {{#if application}}
+                <a class="btn" href="{{application}}" target="_blank">CLICK HERE TO APPLY</a>
+            {{else}}
+                <p class="coming-soon">Application Comming Soon</p>
+            {{/if}}
+        </div>
     </div>
-{{/section}}
+{{/each}}

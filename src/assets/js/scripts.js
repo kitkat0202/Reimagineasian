@@ -37,58 +37,21 @@ document.addEventListener('DOMContentLoaded', function() {
   /////////////////
   // INTRO MODAL //
   /////////////////
-  let introModal = document.querySelector("#intro-modal")
-  introModal.addEventListener("click", closeModal)
-
   let allVideoModal = document.querySelectorAll(".video-modal")
   allVideoModal.forEach(el => {
     el.addEventListener("click", closeModal)
-
   })
 
 
   ///////////////////
   // Mobile Navbar //
   ///////////////////
-  let btnsToCloseNav = document.querySelectorAll("#sidenav .overlay, #sidenav a")
-  let mobileNavTrigger = document.querySelector(".sidenav-trigger")
-  function closeNavbar() {
-    let mobileNav = document.querySelector("#sidenav")
-    if (mobileNav && mobileNav.classList.contains("active")) {
-      mobileNav.classList.remove("active")
-      mobileNavTrigger.classList.remove("open")
-    }
-  }
-
-  function openNavbar() {
-    let mobileNav = document.querySelector("#sidenav")
-    if (mobileNav && !mobileNav.classList.contains("active")) {
-      mobileNav.classList.add("active")
-      mobileNavTrigger.classList.add("open")
-    }
-  }
+  let mobileNavBtn = document.querySelector(".mobile-nav-trigger")
+  mobileNavBtn.addEventListener("click", () => {
+    document.querySelector(".nav-wrapper").classList.toggle("active")
+  })
 
 
-  if (btnsToCloseNav.length > 0) {
-    btnsToCloseNav.forEach(el => {
-      el.addEventListener("click", () => {
-        closeNavbar()
-      })
-    })
-  }
-
-
-  if (mobileNavTrigger) {
-    mobileNavTrigger.addEventListener("click", () => {
-      if (mobileNavTrigger.classList.contains("open")) {
-        closeNavbar()
-      } else {
-        openNavbar()
-      }
-
-
-    })
-  }
 
   ////////////
   // SLIDES //

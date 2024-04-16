@@ -2,31 +2,35 @@
   <div class="container">
     <nav>
       <div class="nav-wrapper">
-        <a tabindex="0" class="sidenav-trigger">
+        {{!-- img container --}}
+        <div class="nav-logo-container">
+          <a href="/">
+            <img src="/assets/img/global/logo-text.png" alt="Logo">
+          </a>
+        </div>
+
+        {{!-- nav trigger --}}
+        <a tabindex="0" class="mobile-nav-trigger">
           <div class="menu-btn-container">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </a>
-        <ul>
-          {{#each pages}}
-          <li>
-            <a href="{{link}}">{{{name}}}</a>
-          </li>
-          {{/each}}
-        </ul>
+
+        {{!-- nav links --}}
+        <div class="nav-links">
+          <ul>
+            {{#each pages}}
+              <li>
+                <a href="{{link}}" {{#equal ../page name}}class="link-active"{{/equal}}>{{{name}}}</a>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+
       </div>
     </nav>
   </div>
-  <div class="sidenav" id="sidenav">
-    <div class="overlay"></div>
-    <ul>
-      {{#each pages}}
-        <li>
-          <a href="{{link}}">{{{name}}}</a>
-        </li>
-      {{/each}}
-    </ul>
-  </div>
+
 </header>

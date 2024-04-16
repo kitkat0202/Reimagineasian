@@ -1,126 +1,63 @@
 [
     {
-        "img": "gallery_1.png",
-        "alt": "Reeimagineasian first fair street image",
+        "img": "reimagine-year-2-1.JPG",
+        "alt": "Reeimagineasian second fair street image",
         "data": "reimagineasianGallery",
         "class": "big"
     },
     {
-        "img": "gallery_2.jpg",
-        "alt": "HangryDog with ketchup and mustard",
-        "data": "reimagineasianGallery",
-        "class": "horizontal"
-    },
-    {
-        "img": "gallery_3.jpg",
-        "alt": "potato croquettes",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_4.jpg",
-        "alt": "Lion dance on the first Reinagineasian fair 1",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_5.jpg",
-        "alt": "Lion dance on the first Reinagineasian fair 2",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_6.jpg",
-        "alt": "Lion dance on the first Reinagineasian fair 3",
-        "data": "reimagineasianGallery",
-        "class": "horizontal"
-    },
-    {
-        "img": "gallery_7.png",
-        "alt": "Lettuce Meat stand",
-        "data": "reimagineasianGallery",
-        "class": "vertical"
-    },
-    {
-        "img": "gallery_8.jpg",
-        "alt": "HangryDog first day stand",
-        "data": "reimagineasianGallery",
-        "class": "big"
-    },
-    {
-        "img": "gallery_9.jpg",
-        "alt": "Lion dance on the first Reinagineasian fair 4",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_10.jpg",
-        "alt": "Twisted Potato",
-        "data": "reimagineasianGallery",
-        "class": "vertical"
-    },
-    {
-        "img": "gallery_11.jpg",
-        "alt": "Mochi Waffels",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_12.jpg",
-        "alt": "Summer Rolls",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_13.jpg",
-        "alt": "Reeimagineasian first fair street image",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_14.png",
-        "alt": "Five Spice stand",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_15.jpg",
-        "alt": "Five Spice tacos and drinks",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_16.jpg",
-        "alt": "Five Spice drinks",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_17.jpg",
-        "alt": "Lion dance on the first Reinagineasian fair 5",
-        "data": "reimagineasianGallery",
-        "class": "vertical"
-    },
-    {
-        "img": "gallery_18.jpg",
-        "alt": "Jester on the first Reinagineasian fair",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_19.jpg",
-        "alt": "Matcha Strawberry drink",
-        "data": "reimagineasianGallery"
-    },
-    {
-        "img": "gallery_20.jpg",
+        "img": "popcorn-chicken.jpg",
         "alt": "Popcorn chicken",
         "data": "reimagineasianGallery"
     },
     {
-        "img": "gallery_21.jpg",
-        "alt": "Lion dance on the first Reinagineasian fair 6",
-        "data": "reimagineasianGallery"
+        "img": "reimagine-year-1-1.jpg",
+        "alt": "Reeimagineasian first fair street image",
+        "data": "reimagineasianGallery",
+        "class": "horizontal"
     },
     {
-        "img": "gallery_22.jpg",
-        "alt": "Lion dance on the first Reinagineasian fair 7",
+        "img": "lettus-leaf.JPG",
+        "alt": "Lettus Leaf -  Lettus wrap",
         "data": "reimagineasianGallery",
         "class": "vertical"
     },
     {
-        "img": "gallery_23.png",
-        "alt": "Lion dance on the first Reinagineasian fair 8",
+        "img": "hangrydog.JPG",
+        "alt": "HangryDog Korean corndog",
         "data": "reimagineasianGallery",
-        "class": "big"
+        "class": "vertical"
+    },
+    {
+        "img": "karls-ball.JPG",
+        "alt": "Karl's Ball - Takoyaki",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "twisted-potato.JPG",
+        "alt": "Twisted potato",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "lion-dance-1.jpg",
+        "alt": "Lion dance on the first Reinagineasian fair 2",
+        "data": "reimagineasianGallery"
+    },
+
+    {
+        "img": "sams-fried-icecream.jpeg",
+        "alt": "Sam's Fried Ice Cream",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "five-spice-drink.jpg",
+        "alt": "Five Spice drinks",
+        "data": "reimagineasianGallery"
+    },
+    {
+        "img": "lion-dance-2.jpg",
+        "alt": "Lion dance on the first Reinagineasian fair 3",
+        "data": "reimagineasianGallery",
+        "class": "horizontal"
     }
 ]

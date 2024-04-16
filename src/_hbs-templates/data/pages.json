@@ -1,14 +1,14 @@
 [
     {
-        "name": "About Us",
-        "link": "#about"
+        "name": "home",
+        "link": "/"
     },
     {
-        "name": "Events",
-        "link": "#events"
+        "name": "about us",
+        "link": "/about"
     },
     {
-        "name": "Gallery",
-        "link": "#gallery"
+        "name": "events",
+        "link": "/events"
     }
 ]

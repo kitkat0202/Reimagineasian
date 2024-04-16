@@ -9,17 +9,8 @@
 html, body {
   color: $textColor;
   font-family: $text;
-  background-color: $black;
-}
-
-body {
-  &.pause {
-    overflow: hidden;
-    height: 100vh;
-    header {
-      z-index: unset;
-    }
-  }
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 * {
@@ -31,26 +22,28 @@ body {
 
 .nowrap { white-space: nowrap; }
 
+main {
+  margin-top: 90px;
+}
+
 .container {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1300px;
+  padding: 0 20px;
+  position: relative;
 }
 
-section {
-  padding: 30px 60px 30px 10px;
-  margin-bottom: 50px;
-  @media (min-width: $md) {
-    padding: 30px;
-    margin-bottom: 100px;
-  }
+section, .banner {
+  padding-top: 75px;
+  padding-bottom: 75px;
 }
 
-.logo-head-container {
-  display: flex;
-  @media (min-width: 846px) {
-    justify-content: center;
+section, footer, header {
+  &.dark {
+    background-color: $dark-blue;
+    color: $white;
   }
-  img {
-    width: 290px;
+  &.orange {
+    background-color: $light-orange;
   }
 }

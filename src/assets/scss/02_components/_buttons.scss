@@ -1,32 +1,50 @@
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: max-content;
-    border: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: .75rem;
-    height: 30px;
-    background-image: $gradient;
-    background-size: 250%;
-    background-position: 50% 0%;
-    color: $black;
-    font-weight: bold;
+    padding: 15px 40px;
+    background-color: $dark-blue;
+    border-radius: 50px;
+    color: $white;
     text-decoration: none;
-    border-radius: 15px 15px 0 15px;
-    padding: 2px 15px 0 15px;
-    white-space: nowrap;
+    font-weight: bold;
+    letter-spacing: .5px;
+    display: block;
+    width: max-content;
     transform: translate(0px, 0px);
     transition: all .1s linear;
+
     &:hover {
         background-position: 0% 0%;
-        box-shadow: 2px 2px 2px #ffffff8d;
+        box-shadow: 2px 2px 2px #aaaaaa;
         transform: translate(-2px, -2px);
         color: $black;
+        background-color: $orange;
     }
     &:active {
         box-shadow: 0px 0px 0px #0000008d;
         transform: translate(0px, 0px);
+    }
+}
+
+.link {
+    color: $orange;
+    font-weight: bold;
+    letter-spacing: .5px;
+    text-decoration: none;
+    border-bottom: 2px solid $orange;
+    &:hover {
+        color: $dark-blue;
+        border-bottom: 2px solid $dark-blue;
+    }
+}
+
+
+.dark {
+    .btn {
+        background-color: $white;
+        color: $dark-blue;
+
+        &:hover {
+            color: $black;
+            background-color: $orange;
+        }
     }
 }

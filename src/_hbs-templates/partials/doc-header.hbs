@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{meta.title}}</title>
+    <title>{{page}} | {{meta.title}}</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +48,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
 
     <!-- style -->
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="{{#equal page "Home"}}./{{else}}../{{/equal}}assets/css/main.css">
+
+    <!-- JS -->
+    <script src="{{#equal page "Home"}}./{{else}}../{{/equal}}assets/js/main.js"></script>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100" class="pause">
+<body >

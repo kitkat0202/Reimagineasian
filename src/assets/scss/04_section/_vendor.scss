@@ -1,0 +1,21 @@
+#vendor {
+    section, .banner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    p {
+        margin-bottom: 15px;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+    ul, ol {
+        padding-left: 2.5em;
+    }
+    #how-to-apply {
+        padding-bottom: 75px;
+        .btn {
+            margin-top: 75px;
+        }
+    }
+}

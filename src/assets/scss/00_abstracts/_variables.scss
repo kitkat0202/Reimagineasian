@@ -1,24 +1,24 @@
 // COLOR
-$black: #000;
+$black: #292b2c;
 $white: #fff;
-$blue: #00EFD1;
-$dark-blue: #00ACEA;
+$orange: #ff6d6d;
+$light-orange: #ffb1b1;
+$teal: #0d9dad;
+$dark-blue: #1d414d;
+$grey: #6d6d6d;
 
 $primaryColor: $white;
 $secondaryColor: $black;
-$thirdColor: $blue;
+$thirdColor: $dark-blue;
 
-$textColor: $white;
-$hover-color: $thirdColor;
+$textColor: $black;
 
-
-$gradient: linear-gradient(90deg, $blue 35%,$dark-blue 65%);
 
 // FONT
 $title: 'Averia Libre', cursive;
 $text: 'Raleway', sans-serif;
 
-// OTHER
+// OTHERs
 $trans: all 200ms ease-in-out;
 $shadow: 5px 5px 10px #ffffff89;
 

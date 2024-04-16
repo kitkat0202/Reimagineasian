@@ -1,0 +1,17 @@
+.img-curved {
+    width: 100%;
+    border-radius: 0px 60px 20px;
+    max-width: 460px;
+    margin: 0 auto;
+    display: block;
+    &.bordered-blue {
+        border: 5px solid $dark-blue;
+    }
+    &.bordered-orange {
+        border: 5px solid $orange;
+    }
+    &.small-curved {
+        border-radius: 0px 20px 5px;
+    }
+}
+

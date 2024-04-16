@@ -1,0 +1,60 @@
+ul.bullet {
+    list-style-type: none;
+    padding-left: 1em;
+    li {
+        margin-bottom: 20px;
+        &:before {
+            content: "";
+            background-image: url("../img/global/bullet.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            width: .5em;
+            height: 12px;
+            margin-left: -1em;
+            margin-right: .5em;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+ul.no-bullet-border {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+        border-bottom: 1px solid $orange;
+        padding-bottom: 30px;
+        &:before {
+            display: none;
+        }
+        &:last-of-type {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: list;
+    margin-bottom: 20px;
+    padding-left: 1em;
+    li {
+        counter-increment: list;
+        margin-bottom: 20px;
+        &:before {
+            content: counter(list) ".";
+            font-weight: bold;
+            color: $orange;
+            margin-right: .5em;
+            margin-left: -1.5em;
+        }
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}

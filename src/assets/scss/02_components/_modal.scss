@@ -5,39 +5,8 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    &#intro-modal {
-        background-color: $secondaryColor;
-        &.active {
-            display: block;
-        }
-        &:hover {
-            cursor: pointer;
-        }
-        .container {
-            height: 100%;
-        }
-        .content {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            img {
-                width: 80%;
-            }
+    z-index: 1001;
 
-            p {
-                font-size: 12px;
-                font-weight: bold;
-                border-bottom: $border;
-                @media (min-width: $md) {
-                    font-size: 20px;
-                }
-            }
-        }
-
-    }
     &.video-modal {
         background-color: #000000d8;
         width: 100vw;
