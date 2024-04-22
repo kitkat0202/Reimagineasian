@@ -2,6 +2,10 @@
 `npm i`
 `npm start`
 
+### For new developers of Reimagin Food Fest site
+the videos in the src file is deleted, to fix:
+ - take the "videos" folder from `build > assets > img` and make a copy at `src > assets > img`
+
 
 ### How to deploy
 If its this sites FIRST deployment:
