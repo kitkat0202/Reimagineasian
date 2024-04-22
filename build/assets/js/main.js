@@ -11,6 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
       var modal = document.querySelector("#".concat(modalID));
       modal.classList.add("active");
       document.querySelector("body").classList.add("pause");
+
+      if (modalID === "modal-location") {
+        var locatioLink = el.getAttribute("data-location-link");
+        var iframeSrc = document.querySelector("#modal-location iframe");
+        iframeSrc.setAttribute("src", locatioLink);
+      }
     });
   }); /////////////////
   // CLOSE MODAL //
@@ -28,13 +34,17 @@ document.addEventListener('DOMContentLoaded', function () {
         elVideo.pause();
         elVideo.currentTime = 0;
       }
+
+      var elIframe = el.querySelector("iframe");
+
+      if (elIframe) {
+        var iframeSrc = document.querySelector("#modal-location iframe");
+        iframeSrc.setAttribute("src", "");
+      }
     });
-  } /////////////////
-  // INTRO MODAL //
-  /////////////////
+  }
 
-
-  var allVideoModal = document.querySelectorAll(".video-modal");
+  var allVideoModal = document.querySelectorAll(".modal, .close");
   allVideoModal.forEach(function (el) {
     el.addEventListener("click", closeModal);
   }); ///////////////////
@@ -44,6 +54,22 @@ document.addEventListener('DOMContentLoaded', function () {
   var mobileNavBtn = document.querySelector(".mobile-nav-trigger");
   mobileNavBtn.addEventListener("click", function () {
     document.querySelector(".nav-wrapper").classList.toggle("active");
+  }); ///////////////
+  // Accordion //
+  ///////////////
+
+  var allAccordion = document.querySelectorAll(".accordion");
+  allAccordion.forEach(function (el) {
+    var accordionBtn = el.querySelector(".accordion-title");
+    accordionBtn.addEventListener("click", function () {
+      var accordion = el.querySelector(".accordion-item");
+
+      if (accordion.classList.contains("active")) {
+        accordion.classList.remove("active");
+      } else {
+        accordion.classList.add("active");
+      }
+    });
   }); ////////////
   // SLIDES //
   ////////////

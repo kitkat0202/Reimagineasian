@@ -18,16 +18,53 @@
 
   <section id="event-list">
     <div class="container">
-
+      <h2>Upcoming Events</h2>
+      <div class="upcoming-event-list">
+        {{> section/events
+          timing="upcoming"
+        }}
+      </div>
     </div>
   </section>
 
-  {{> stay-connected
+  <!-- <section id="previous-vendors">
+    <div class="container">
+      <h2>Vendors</h2>
+      <div class="vendor-list">
+        {{> section/vendors}}
+      </div>
+    </div>s
+  </section> -->
+
+  <section id="past-events">
+    <div class="container">
+      <h2>Past Events</h2>
+      <div class="past-event-list">
+        {{> section/events
+          timing="past"
+        }}
+      </div>
+    </div>
+  </section>
+
+
+  {{> section/stay-connected
     title="Join Our Community"
   }}
 
   {{> global-footer}}
 
 {{/main}}
+
+<div id="modal-location" class="modal">
+  <div class="modal-content">
+      <span class="close"></span>
+      <div class="location-embeded-map">
+          <iframe
+              src=""
+              style="border:0;width:100%;height:600px;max-height:80vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+  </div>
+</div>
 
 {{> doc-footer}}

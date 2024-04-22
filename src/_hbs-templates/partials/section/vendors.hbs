@@ -1,0 +1,20 @@
+{{#each vendors}}
+    <div class="vendor-containers">
+        <div class="vendor {{#if classes}} {{classes}} {{/if}}">
+            <div class="vendor-image-container">
+                {{#if icon}}
+                    <img src="{{{icon}}}" alt="{{{name}}}">
+                {{else}}
+                    <img src="../assets/img/vendor/icons8-food-stand-64-5.png" alt="{{{name}}}">
+                {{/if}}
+            </div>
+            <div class="vendor-info-container">
+                {{#if website}}
+                    <a href="{{{website}}}" class="vendor-link"><h3>{{{vendor}}}</h3></a>
+                {{else}}
+                    <h3>{{{vendor}}}</h3>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+{{/each}}

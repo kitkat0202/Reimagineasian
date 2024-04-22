@@ -1,0 +1,37 @@
+[
+    {
+        "vendor": "HangryDog",
+        "icon": "../assets/img/vendor/hangrydog.png",
+        "website": "https://www.hangrydognyc.com/",
+        "classes": "rounded"
+    },
+    {
+        "vendor": "Sam's Fried Icecream",
+        "icon": "../assets/img/vendor/samsfriediccream.png",
+        "website": "https://www.samsfriedicecream.com/",
+        "classes": "rounded"
+    },
+    {
+        "vendor": "Lettus Leaf"
+    },
+    {
+        "vendor": "Twisted Potato",
+        "icon": "../assets/img/vendor/twistedpotato.png",
+        "website": "https://twistedpotato.com/"
+    },
+    {
+        "vendor": "Five Spice",
+        "icon": "../assets/img/vendor/fivespice.png",
+        "website": "https://5ivespicebk.com/",
+        "classes": "rounded"
+    },
+    {
+        "vendor": "Fried Oreos"
+    },
+    {
+        "vendor": "C Bao",
+        "icon": "../assets/img/vendor/cbao.png",
+        "website": "https://www.mycbao.com/",
+        "classes": "rounded"
+    }
+]

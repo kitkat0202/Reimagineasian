@@ -1,26 +1,39 @@
 .modal {
     display: none;
     position: fixed;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
+    background-color: #000000d8;
     width: 100vw;
     height: 100vh;
     z-index: 1001;
 
+    .modal-content {
+        position: relative;
+    }
+
+    .close {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        width: 30px;
+        height: 30px;
+        background: #fff url('../img/global/icon-close.webp') no-repeat;
+        background-size: contain;
+        border-radius: 10px;
+    }
+
     &.video-modal {
-        background-color: #000000d8;
-        width: 100vw;
-        height: 100vh;
-        justify-content: center;
-        align-items: center;
-        &.active {
-            display: flex;
-        }
-        .container {
+        .modal-content {
             display: flex;
             flex-direction: column;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
             h3 {
-                margin-bottom: 30px;
+                margin-bottom: 10px;
             }
             video {
                 height: 80vh;
@@ -30,4 +43,16 @@
         }
     }
 
+    &#modal-location {
+        .modal-content {
+            width: 80%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+
+    &.active {
+        display: flex;
+    }
 }

@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
       modal.classList.add("active")
       document.querySelector("body").classList.add("pause")
+
+      if(modalID === "modal-location") {
+        let locatioLink = el.getAttribute("data-location-link")
+        let iframeSrc = document.querySelector(`#modal-location iframe`)
+
+        iframeSrc.setAttribute("src", locatioLink)
+      }
     })
   })
 
@@ -27,17 +34,16 @@ document.addEventListener('DOMContentLoaded', function() {
         elVideo.pause();
         elVideo.currentTime = 0;
       }
+
+      let elIframe = el.querySelector("iframe")
+      if(elIframe) {
+        let iframeSrc = document.querySelector(`#modal-location iframe`)
+        iframeSrc.setAttribute("src", "")
+      }
     })
   }
 
-
-
-
-
-  /////////////////
-  // INTRO MODAL //
-  /////////////////
-  let allVideoModal = document.querySelectorAll(".video-modal")
+  let allVideoModal = document.querySelectorAll(".modal, .close")
   allVideoModal.forEach(el => {
     el.addEventListener("click", closeModal)
   })
@@ -50,6 +56,26 @@ document.addEventListener('DOMContentLoaded', function() {
   mobileNavBtn.addEventListener("click", () => {
     document.querySelector(".nav-wrapper").classList.toggle("active")
   })
+
+
+  ///////////////
+  // Accordion //
+  ///////////////
+  let allAccordion = document.querySelectorAll(".accordion")
+  allAccordion.forEach(el => {
+    let accordionBtn = el.querySelector(".accordion-title")
+
+    accordionBtn.addEventListener("click", () => {
+      let accordion = el.querySelector(".accordion-item")
+      if (accordion.classList.contains("active")) {
+        accordion.classList.remove("active")
+      } else {
+        accordion.classList.add("active")
+      }
+    })
+  })
+
+
 
 
 

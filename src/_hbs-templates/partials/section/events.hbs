@@ -1,0 +1,60 @@
+
+{{#equal timing "upcoming"}}
+{{#each events}}
+{{#if past}}
+
+{{else}}
+<div class="event-full-containers">
+    <div class="event-container">
+        {{#if embeded}}
+        <div class="open-modal" data-modal-id="modal-location" data-location-link="{{embeded}}" ></div>
+        {{/if}}
+        <div class="dates-container">
+            <p class="month">{{{month}}} {{{year}}}</p>
+            <p class="date">{{{date}}}</p>
+            <p class="week">{{{week}}}</p>
+        </div>
+        <div class="time-container">
+            <span>Time:</span>
+            <span>{{{time}}}</span>
+        </div>
+        <div class="location-container">
+            <span>Location:</span>
+            <span data-modal-id="modal-location" data-location-link="{{embeded}}" >
+                {{{location}}}<br/>
+                {{#if location2}}<span class="smaller">{{{location2}}}</span>{{/if}}
+            </span>
+        </div>
+    </div>
+</div>
+{{/if}}
+{{/each}}
+{{/equal}}
+
+
+{{#equal timing "past"}}
+{{#each events}}
+{{#if past}}
+    <div class="event-full-containers">
+        <div class="event-container">
+            <div class="dates-container">
+                <p class="month">{{{month}}} {{{year}}}</p>
+                <p class="date">{{{date}}}</p>
+                <p class="week">{{{week}}}</p>
+            </div>
+            <div class="time-container">
+                <span>Time:</span>
+                <span>{{{time}}}</span>
+            </div>
+            <div class="location-container">
+                <span>Location:</span>
+                <span>
+                    {{{location}}}<br/>
+                    {{#if location2}}<span class="smaller">{{{location2}}}</span>{{/if}}
+                </span>
+            </div>
+        </div>
+    </div>
+{{/if}}
+{{/each}}
+{{/equal}}
