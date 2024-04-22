@@ -24,7 +24,11 @@ document.addEventListener('DOMContentLoaded', function() {
   // CLOSE MODAL //
   /////////////////
   let allModals = document.querySelectorAll(".modal")
-  function closeModal() {
+  function closeModal(event) {
+    if (!event.target.classList.contains('modal') && !event.target.classList.contains('close')) {
+      return;
+    }
+
     document.querySelector("body").classList.remove("pause")
     allModals.forEach(el => {
       el.classList.remove("active")
