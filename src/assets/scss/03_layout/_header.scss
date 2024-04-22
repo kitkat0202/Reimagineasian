@@ -46,6 +46,7 @@ header {
     position: absolute;
     top: 35px;
     right: 30px;
+    cursor: pointer;
     outline: none;
     span {
       display: block;
@@ -86,12 +87,16 @@ header {
       border-bottom: 3px solid $white;
       margin: 0 10px;
       &:hover {
-        color: $orange;
+        color: $white;
         border-bottom: 3px solid $orange;
       }
       &.link-active {
         color: $dark-blue;
         border-bottom: 3px solid $dark-blue;
+      }
+      &.link-active:hover {
+        color: $white;
+        border-bottom: 3px solid $white;
       }
     }
   }
