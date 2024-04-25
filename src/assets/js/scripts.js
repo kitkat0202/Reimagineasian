@@ -56,9 +56,11 @@ document.addEventListener('DOMContentLoaded', function() {
   ///////////////////
   // Mobile Navbar //
   ///////////////////
-  let mobileNavBtn = document.querySelector(".mobile-nav-trigger")
-  mobileNavBtn.addEventListener("click", () => {
-    document.querySelector(".nav-wrapper").classList.toggle("active")
+  let mobileNavBtnAll = document.querySelectorAll(".mobile-nav-trigger, .nav-mobile-dark")
+  mobileNavBtnAll.forEach(el => {
+    el.addEventListener("click", () => {
+      document.querySelector(".nav-wrapper").classList.toggle("active")
+    })
   })
 
 
