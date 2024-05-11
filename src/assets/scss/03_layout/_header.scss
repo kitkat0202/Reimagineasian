@@ -93,16 +93,12 @@ header {
       border-bottom: 3px solid $white;
       margin: 0 10px;
       &:hover {
-        color: $white;
+        color: $orange;
         border-bottom: 3px solid $orange;
       }
       &.link-active {
         color: $dark-blue;
         border-bottom: 3px solid $dark-blue;
-      }
-      &.link-active:hover {
-        color: $white;
-        border-bottom: 3px solid $white;
       }
     }
   }
